@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+    <line>
+      <![CDATA[Table reading start]]>
+    </line>
+    <line>
+      <![CDATA[Table data print successfully]]>
+    </line>
+    <line>
+      <![CDATA[Table reading specific data]]>
+    </line>
+    <line>
+      <![CDATA[Table specific data print successfully]]>
+    </line>
+  </reporter-output>
+  <suite name="Suite" duration-ms="51875" started-at="2019-11-05T14:49:44Z" finished-at="2019-11-05T14:50:36Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="30819" started-at="2019-11-05T14:49:44Z" finished-at="2019-11-05T14:50:15Z">
+      <class name="com.atmecs.FrameworkTesting.testscripts.TableTest">
+        <test-method status="PASS" signature="intitailizeBrowser(java.lang.String, java.lang.String)[pri:0, instance:com.atmecs.FrameworkTesting.testscripts.TableTest@4667ae56]" name="intitailizeBrowser" is-config="true" duration-ms="7746" started-at="2019-11-05T14:49:44Z" finished-at="2019-11-05T14:49:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://www.toolsqa.com/automation-practice-table/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- intitailizeBrowser -->
+        <test-method status="PASS" signature="invoceBrowser()[pri:0, instance:com.atmecs.FrameworkTesting.testscripts.TableTest@4667ae56]" name="invoceBrowser" is-config="true" duration-ms="11094" started-at="2019-11-05T14:49:51Z" finished-at="2019-11-05T14:50:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invoceBrowser -->
+        <test-method status="PASS" signature="tableTesting()[pri:0, instance:com.atmecs.FrameworkTesting.testscripts.TableTest@4667ae56]" name="tableTesting" duration-ms="11705" started-at="2019-11-05T14:50:03Z" finished-at="2019-11-05T14:50:14Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Table reading start]]>
+            </line>
+            <line>
+              <![CDATA[Table data print successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- tableTesting -->
+        <test-method status="PASS" signature="endTest()[pri:0, instance:com.atmecs.FrameworkTesting.testscripts.TableTest@4667ae56]" name="endTest" is-config="true" duration-ms="241" started-at="2019-11-05T14:50:14Z" finished-at="2019-11-05T14:50:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+      </class> <!-- com.atmecs.FrameworkTesting.testscripts.TableTest -->
+    </test> <!-- Test -->
+    <test name="Test2" duration-ms="21011" started-at="2019-11-05T14:50:15Z" finished-at="2019-11-05T14:50:36Z">
+      <class name="com.atmecs.FrameworkTesting.testscripts.TableTest2">
+        <test-method status="PASS" signature="intitailizeBrowser(java.lang.String, java.lang.String)[pri:0, instance:com.atmecs.FrameworkTesting.testscripts.TableTest2@27c20538]" name="intitailizeBrowser" is-config="true" duration-ms="8091" started-at="2019-11-05T14:50:15Z" finished-at="2019-11-05T14:50:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://www.toolsqa.com/automation-practice-table/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- intitailizeBrowser -->
+        <test-method status="PASS" signature="invoceBrowser()[pri:0, instance:com.atmecs.FrameworkTesting.testscripts.TableTest2@27c20538]" name="invoceBrowser" is-config="true" duration-ms="5596" started-at="2019-11-05T14:50:23Z" finished-at="2019-11-05T14:50:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invoceBrowser -->
+        <test-method status="PASS" signature="tableTesting()[pri:0, instance:com.atmecs.FrameworkTesting.testscripts.TableTest2@27c20538]" name="tableTesting" duration-ms="3591" started-at="2019-11-05T14:50:28Z" finished-at="2019-11-05T14:50:32Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Table reading specific data]]>
+            </line>
+            <line>
+              <![CDATA[Table specific data print successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- tableTesting -->
+        <test-method status="PASS" signature="endTest()[pri:0, instance:com.atmecs.FrameworkTesting.testscripts.TableTest2@27c20538]" name="endTest" is-config="true" duration-ms="3730" started-at="2019-11-05T14:50:32Z" finished-at="2019-11-05T14:50:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endTest -->
+      </class> <!-- com.atmecs.FrameworkTesting.testscripts.TableTest2 -->
+    </test> <!-- Test2 -->
+  </suite> <!-- Suite -->
+</testng-results>

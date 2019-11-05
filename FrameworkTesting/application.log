@@ -1,0 +1,10 @@
+2019-11-05 19:12:22,715  INFO [main] LogReport:35 - Table reading start
+2019-11-05 19:12:27,219  INFO [main] LogReport:35 - Table data print successfully
+2019-11-05 19:27:33,396  INFO [main] LogReport:35 - Table reading start
+2019-11-05 19:27:38,367  INFO [main] LogReport:35 - Table data print successfully
+2019-11-05 19:28:00,257  INFO [main] LogReport:35 - Table reading specific data
+2019-11-05 19:28:02,426  INFO [main] LogReport:35 - Table specific data print successfully
+2019-11-05 20:20:03,171  INFO [main] LogReport:35 - Table reading start
+2019-11-05 20:20:14,775  INFO [main] LogReport:35 - Table data print successfully
+2019-11-05 20:20:28,761  INFO [main] LogReport:35 - Table reading specific data
+2019-11-05 20:20:32,347  INFO [main] LogReport:35 - Table specific data print successfully
