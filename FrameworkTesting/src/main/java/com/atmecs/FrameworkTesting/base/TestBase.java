@@ -16,7 +16,7 @@ import org.testng.annotations.Parameters;
 
 import com.atmecs.FrameworkTesting.constant.FileConstant;
 import com.atmecs.FrameworkTesting.constant.GridConnection;
-import com.atmecs.FrameworkTesting.reports.ExtentReport;
+import com.atmecs.FrameworkTesting.reports.Extent;
 import com.atmecs.FrameworkTesting.utils.ReadPropertiesFile;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -29,7 +29,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
  *
  */
 
-public class TestBase {
+public class TestBase  {
 	public WebDriver driver;
 	Properties baseClass;
 	public String url;
@@ -83,7 +83,7 @@ public class TestBase {
 		}
 	}
 	
-	@BeforeClass
+	@BeforeTest
 	public void invoceBrowser() {
 		driver.get(url);
 		driver.manage().window().maximize();

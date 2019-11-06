@@ -5,18 +5,19 @@
 		<listener
 			class-name="com.atmecs.FrameworkTesting.reports.ExtentReport"></listener>
 	</listeners>
+<!-- <test thread-count="5" name="Test2"> -->
+<!-- 	<parameter name="browser" value="firefox"/> -->
+<!-- 	<parameter name="url" value="https://www.toolsqa.com/automation-practice-table/"/> -->
+<!-- 		<classes> -->
+<!-- 			<class name="com.atmecs.FrameworkTesting.testscripts.TableTest2" /> -->
+<!-- 		</classes> -->
+<!-- 	</test> -->
 	<test thread-count="5" name="Test">
 	<parameter name="browser" value="chrome"/>
 	<parameter name="url" value="https://www.toolsqa.com/automation-practice-table/"/>
 		<classes>
 			<class name="com.atmecs.FrameworkTesting.testscripts.TableTest" />
 		</classes>
-	</test> <!-- Test -->
-	<test thread-count="5" name="Test2">
-	<parameter name="browser" value="firefox"/>
-	<parameter name="url" value="https://www.toolsqa.com/automation-practice-table/"/>
-		<classes>
-			<class name="com.atmecs.FrameworkTesting.testscripts.TableTest2" />
-		</classes>
-	</test> <!-- Test -->
+	</test> 
+	
 </suite> <!-- Suite -->

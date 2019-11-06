@@ -2,7 +2,6 @@ package com.atmecs.FrameworkTesting.reports;
 
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
-import org.testng.Reporter;
 
 import com.atmecs.FrameworkTesting.constant.FileConstant;
 
@@ -13,7 +12,7 @@ import com.atmecs.FrameworkTesting.constant.FileConstant;
  * @author arjun.santra This class give the log report of testscripts
  *
  */
-public class LogReport {
+public class LogReport extends Extent{
 
 	Logger logger = null;
 
@@ -33,7 +32,7 @@ public class LogReport {
 	 */
 	public void info(String message) {
 		logger.info(message);
-		Reporter.log(message);
+		//messagePrint(message);
 	}
 
 }

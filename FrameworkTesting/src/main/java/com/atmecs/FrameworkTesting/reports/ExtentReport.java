@@ -1,11 +1,17 @@
 package com.atmecs.FrameworkTesting.reports;
 
 import java.io.File;
+import java.io.IOException;
+import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 import java.util.Map;
 
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
 import org.testng.IReporter;
 import org.testng.IResultMap;
 import org.testng.ISuite;
@@ -13,20 +19,24 @@ import org.testng.ISuiteResult;
 import org.testng.ITestContext;
 import org.testng.ITestResult;
 import org.testng.Reporter;
+import org.testng.TestListenerAdapter;
 import org.testng.xml.XmlSuite;
 
 import com.atmecs.FrameworkTesting.constant.FileConstant;
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
+
 /**
  * This class create the extent report for the test script
+ * 
  * @author arjun.santra
  *
  */
-public class ExtentReport implements IReporter {
+public class ExtentReport  implements IReporter {
 	public ExtentReports extent;
 	public ExtentTest test;
+	public WebDriver driver;
 
 	public void generateReport(List<XmlSuite> xmlSuites, List<ISuite> suites, String outputdirectory) {
 		extent = new ExtentReports(FileConstant.USER_HOME + File.separator + "Extent.html", true);
@@ -77,4 +87,20 @@ public class ExtentReport implements IReporter {
 		return calendar.getTime();
 	}
 
+//	@Override
+//	    public void onTestFailure(ITestResult result) {
+//	        Calendar calendar = Calendar.getInstance();
+//	        SimpleDateFormat formater = new SimpleDateFormat("dd_MM_yyyy_hh_mm_ss");
+//	        String methodName = result.getName();
+//	        if(!result.isSuccess()){
+//	            File scrFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+//	            try {
+//	                String reportDirectory = new File(System.getProperty("user.dir")).getAbsolutePath() + "/target/surefire-reports";
+//	                File destFile = new File((String) reportDirectory+"/failure_screenshots/"+methodName+"_"+formater.format(calendar.getTime())+".png");
+//	                FileUtils.copyFile(scrFile, destFile);
+//	                Reporter.log("<a href='"+ destFile.getAbsolutePath() + "'> <img src='"+ destFile.getAbsolutePath() + "' height='100' width='100'/> </a>");
+//	            } catch (IOException e) {
+//	                e.printStackTrace();
+//	            }
+//	        }
 }

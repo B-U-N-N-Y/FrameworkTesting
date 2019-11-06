@@ -22,8 +22,12 @@ public class TableTest extends TestBase {
 		public void tableTesting() {
 			utility=new Utility(driver);
 			webTable=new WebTable(driver);
+			//logger=extent.startTest("TableTest");
 			log=new LogReport();
 			loc=new ReadPropertiesFile().loadProperty(FileConstant.LOCATOR_FILE);
+			System.out.println("hi");
+		
+			System.out.println("bye");
 			log.info("Table reading start");
 			webTable.getTableData(loc.getProperty("loc.toolqa.table"));
 			log.info("Table data print successfully");
